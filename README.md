@@ -17,7 +17,6 @@ You can check the installation using the following command (using Command Prompt
 
 ```
 java -version
-
 ```
 Expected command output is:
 
@@ -69,3 +68,14 @@ Once running, navigate to http://YOUR_IP_ADDRESS:8080/ on your browser and use t
  - System Administrator: sysadmin@thingsboard.org / sysadmin
  - Tenant Administrator: tenant@thingsboard.org / tenant
  - Customer User: customer@thingsboard.org / customer
+## Publish data to thingsboard
+ - Create a device on thingsboard [like this](https://thingsboard.io/docs/user-guide/ui/devices/).
+ - Copy the device access token and pass it to the code.
+ - Run this command:
+ ```
+>> python publish_thingsboard.py
+``` 
+Expected command output is: 
+```
+> Message was published
+```
