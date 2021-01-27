@@ -53,7 +53,11 @@ Let's install and configure Postgresql:
  - Download the installation file [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#windows) and follow the installation instructions.
  ##### :exclamation: During PostgreSQL installation, you will be prompted for superuser (postgres) password. Don’t forget this password. It will be used later. For simplicity, we will substitute it with “postgres”.
  - Once installed, launch the “pgAdmin” software and login as superuser (postgres). Open your server and create database “thingsboard” with owner “postgres”.
- 
+ - Navigate to the thingsboard repo and: 
+ ```
+>> cd Thingsboard\thingsboard\application\target\windows
+>> install_dev_db.bat
+``` 
 
 ## Run Thingsboard
 Open IntelliJ and import the thingsboard repo previously cloned, here you may need to download the packages proposed first and navigate tothis file and click on RUN:
